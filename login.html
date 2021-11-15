@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Home page</title>
+</head>
+<body>
+<main class="main">
+    <!-- START: Region content -->
+    <section class="content">
+        <!-- START: Block -->
+        <div class="block">
+            <div class="heading h2">Log in</div>
+            <p>No account? <a class="link" href="#">Create one</a></p>
+            <!-- START: Form -->
+            <form class="form form--user-auth">
+                <div class="form__item">
+                    <div class="textfield">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="textfield">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                        <button class="textfield__btn-show-pass">
+                            <span class="font-icon font-icon--eye"></span>
+                        </button>
+                    </div>
+                    <div class="helptext">
+                        <p>The password field is case sensitive</p>
+                    </div>
+                </div>
+                <div class="form__actions">
+                    <a href="#" class="link link--right">Forgot password?</a>
+                    <div class="checkbox-field">
+                        <input type="checkbox" id="keep-login" name="keep-login">
+                        <label for="keep-login">Keep logged in</label>
+                    </div>
+                    <button class="btn btn--arrow">
+                        <span>Log in</span>
+                        <span class="font-icon--right"></span>
+                    </button>
+                </div>
+                <div class="helptext">Click “Log in” to agree to <a class="link" href="#">Terms and conditions</a> and acknowledge that <a class="link" href="#">Privacy Policy</a> applies to you.</div>
+            </form>
+        </div>
+    </section>
+</main>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2();
+    });
+</script>
+</body>
+</html>

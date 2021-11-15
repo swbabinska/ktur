@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Home page</title>
+</head>
+<body>
+<main class="main">
+    <!-- START: Region content -->
+    <section class="content">
+        <!-- START: Block -->
+        <div class="block">
+            <div class="heading h2">Create account</div>
+            <p>Already have an account? <a class="link" href="#">Log in</a></p>
+            <!-- START: Form -->
+            <form class="form form--user-auth form--create-account">
+                <div class="form__item">
+                    <div class="textfield">
+                        <label for="firstname">First name</label>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="textfield">
+                        <label for="lastname">Last name</label>
+                        <input type="text" id="lastname" name="lastame">
+                    </div>
+                </div>
+                <div class="form__border-box">
+                    <div class="form-box">
+                        <div class="form-box__group">
+                            <p class="form-box__label">
+                                Affiliation
+                            </p>
+                            <p>Please specify your affiliation</p>
+
+                            <div class="radio-field">
+                                <input type="radio" name="radio-field" id="exampleRadio1" checked>
+                                <label class="form-check-label" for="exampleRadio1">
+                                    Academic institution member
+                                </label>
+                            </div>
+                            <div class="radio-field">
+                                <input type="radio" name="radio-field" id="exampleRadio2">
+                                <label class="form-check-label" for="exampleRadio2">
+                                        Business organisation member
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-box__group">
+                            <p class="form-box__label">
+                                Academic institution
+                            </p>
+                            <p>Please select one of our 12 academic partners</p>
+                            <div class="select-field">
+                                <select name="choice" id="js-example-basic-single">
+                                    <option value="first" selected>- select academic institution -</option>
+                                    <option value="second">Second Value</option>
+                                    <option value="third">Third Value</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="link--light-blue link--add">Add another affiliation</a>
+                </div>
+                <div class="form__item">
+                    <div class="textfield">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+                <div class="form__item has-error">
+                    <div class="textfield">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                        <button class="textfield__btn-show-pass">
+                            <span class="font-icon font-icon--eye"></span>
+                        </button>
+                    </div>
+                    <div class="helptext">
+                        <p>8 characters minimum</p>
+                    </div>
+                </div>
+                <div class="form__actions">
+                    <button class="btn btn--arrow">
+                        <span>Create account</span>
+                        <span class="font-icon--right"></span>
+                    </button>
+                </div>
+                <div class="helptext">Click “Log in” to agree to <a class="link" href="#">Terms and conditions</a> and acknowledge that <a class="link" href="#">Privacy Policy</a> applies to you.</div>
+            </form>
+        </div>
+    </section>
+</main>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#js-example-basic-single').select2();
+    });
+</script>
+</body>
+</html>
